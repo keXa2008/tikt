@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/userId"
+        android:layout_width="wrap_content"
+        android:layout_height="48sp"
+        android:ems="12"
+        android:inputType="number"
+        android:hint="ID пользователя" />
+
+    <EditText
+        android:id="@+id/depPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="48sp"
+        android:ems="12"
+        android:inputType="text"
+        android:hint="Место отправления" />
+
+    <TimePicker
+        android:id="@+id/depTime"
+        android:layout_width="wrap_content"
+        android:layout_height="130sp"
+        android:timePickerMode="spinner"
+        android:tooltipText="Время отправления"
+        />
+
+    <EditText
+        android:id="@+id/arrivalPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="48sp"
+        android:ems="12"
+        android:hint="Место прибытия"
+        android:inputType="text" />
+
+    <TimePicker
+        android:id="@+id/arrivalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="130sp"
+        android:timePickerMode="spinner"
+        android:tooltipText="Время прибытия"
+        />
+
+    <EditText
+        android:id="@+id/ticketCost"
+        android:layout_width="wrap_content"
+        android:layout_height="48sp"
+        android:ems="12"
+        android:inputType="number"
+        android:hint="Стоимость билета, руб." />
+
+    <Button
+        android:id="@+id/placeOrderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Оформить заказ"
+        />
+</LinearLayout>
